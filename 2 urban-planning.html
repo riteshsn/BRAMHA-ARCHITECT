@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Urban Planning Projects</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+            font-family: 'Segoe UI', Arial, sans-serif;
+            margin: 0;
+            background: #f7f7f7;
+            color: #222;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 40px auto;
+            padding: 0 20px;
+        }
+        h1 {
+            text-align: center;
+            margin-bottom: 40px;
+            letter-spacing: 2px;
+        }
+        .projects-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+            gap: 30px;
+        }
+        .project-card {
+            background: #fff;
+            border-radius: 12px;
+            box-shadow: 0 4px 16px rgba(0,0,0,0.08);
+            overflow: hidden;
+            transition: transform 0.2s;
+            display: flex;
+            flex-direction: column;
+        }
+        .project-card:hover {
+            transform: translateY(-8px) scale(1.02);
+            box-shadow: 0 8px 24px rgba(0,0,0,0.12);
+        }
+        .project-image {
+            width: 100%;
+            height: 180px;
+            object-fit: cover;
+            background: #e0e0e0;
+        }
+        .project-content {
+            padding: 20px;
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+        .project-title {
+            font-size: 1.2rem;
+            font-weight: 600;
+            margin-bottom: 10px;
+            color: #2d3a4b;
+        }
+        .project-desc {
+            font-size: 1rem;
+            color: #555;
+            margin-bottom: 16px;
+        }
+        .project-link {
+            align-self: flex-start;
+            text-decoration: none;
+            color: #1976d2;
+            font-weight: 500;
+            transition: color 0.2s;
+        }
+        .project-link:hover {
+            color: #0d47a1;
+            text-decoration: underline;
+        }
+        @media (max-width: 600px) {
+            .container {
+                padding: 0 8px;
+            }
+            .project-content {
+                padding: 14px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Urban Planning Projects</h1>
+        <div class="projects-grid">
+            <div class="project-card">
+                <img class="project-image" src="https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=600&q=80" alt="Project 1">
+                <div class="project-content">
+                    <div>
+                        <div class="project-title">Green City Park</div>
+                        <div class="project-desc">A sustainable urban park design integrating green spaces and pedestrian pathways for community engagement.</div>
+                    </div>
+                    <a class="project-link" href="#">View Details</a>
+                </div>
+            </div>
+            <div class="project-card">
+                <img class="project-image" src="https://images.unsplash.com/photo-1464983953574-0892a716854b?auto=format&fit=crop&w=600&q=80" alt="Project 2">
+                <div class="project-content">
+                    <div>
+                        <div class="project-title">Downtown Revitalization</div>
+                        <div class="project-desc">Transforming the city center with mixed-use developments and modern infrastructure.</div>
+                    </div>
+                    <a class="project-link" href="#">View Details</a>
+                </div>
+            </div>
+            <div class="project-card">
+                <img class="project-image" src="https://images.unsplash.com/photo-1500534314209-a25ddb2bd429?auto=format&fit=crop&w=600&q=80" alt="Project 3">
+                <div class="project-content">
+                    <div>
+                        <div class="project-title">Smart Housing Complex</div>
+                        <div class="project-desc">Innovative residential design focusing on smart technology and eco-friendly materials.</div>
+                    </div>
+                    <a class="project-link" href="#">View Details</a>
+                </div>
+            </div>
+            <div class="project-card">
+                <img class="project-image" src="https://images.unsplash.com/photo-1465101046530-73398c7f28ca?auto=format&fit=crop&w=600&q=80" alt="Project 4">
+                <div class="project-content">
+                    <div>
+                        <div class="project-title">Riverfront Development</div>
+                        <div class="project-desc">Redeveloping the riverfront with public spaces, walkways, and recreational facilities.</div>
+                    </div>
+                    <a class="project-link" href="#">View Details</a>
+                </div>
+            </div>
+            <div class="project-card">
+                <img class="project-image" src="https://images.unsplash.com/photo-1464037866556-6812c9d1c72e?auto=format&fit=crop&w=600&q=80" alt="Project 5">
+                <div class="project-content">
+                    <div>
+                        <div class="project-title">Transit-Oriented Hub</div>
+                        <div class="project-desc">Designing a multi-modal transit hub to enhance urban mobility and connectivity.</div>
+                    </div>
+                    <a class="project-link" href="#">View Details</a>
+                </div>
+            </div>
+            <div class="project-card">
+                <img class="project-image" src="https://images.unsplash.com/photo-1501594907352-04cda38ebc29?auto=format&fit=crop&w=600&q=80" alt="Project 6">
+                <div class="project-content">
+                    <div>
+                        <div class="project-title">Eco-Industrial Park</div>
+                        <div class="project-desc">A modern industrial park with a focus on sustainability and green technologies.</div>
+                    </div>
+                    <a class="project-link" href="#">View Details</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html></div>
